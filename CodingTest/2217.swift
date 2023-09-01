@@ -7,6 +7,8 @@
 // readLine()!.split(separator: " ")
 // readLine()!.split(separator: " ").map{ Int(String($0))! }
 //var input = readLine()!
+//let input = Array(readLine()!)
+//let result = input.map { Int(String($0))! }
 
 import Foundation
 
