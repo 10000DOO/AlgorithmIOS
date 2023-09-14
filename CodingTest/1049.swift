@@ -27,6 +27,7 @@ for _ in 0..<M {
 
 let multiple = setMin / N
 
+
 var result = 0
 
 if N < multiple {
