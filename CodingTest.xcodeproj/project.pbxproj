@@ -6,6 +6,12 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		69A76B132ADE3E39008332C7 /* golf1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A76B102ADE3E39008332C7 /* golf1.swift */; };
+		69A76B142ADE3E39008332C7 /* golf2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A76B112ADE3E39008332C7 /* golf2.swift */; };
+		69A76B152ADE3E39008332C7 /* golf3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A76B122ADE3E39008332C7 /* golf3.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		698725FB2A90D7500087ABED /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -23,6 +29,10 @@
 		690CF2C42AB2B646002B29C0 /* 1439.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1439.swift; sourceTree = "<group>"; };
 		698725FD2A90D7500087ABED /* CodingTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		698726002A90D7500087ABED /* 2217.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2217.swift; sourceTree = "<group>"; };
+		69A76B0F2ADE3E1C008332C7 /* 백준 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "백준"; sourceTree = "<group>"; };
+		69A76B102ADE3E39008332C7 /* golf1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = golf1.swift; sourceTree = "<group>"; };
+		69A76B112ADE3E39008332C7 /* golf2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = golf2.swift; sourceTree = "<group>"; };
+		69A76B122ADE3E39008332C7 /* golf3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = golf3.swift; sourceTree = "<group>"; };
 		69AB84EF2AA61CD9003534D1 /* 13305.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 13305.swift; sourceTree = "<group>"; };
 		69AB84F12AA6DA1E003534D1 /* 10610.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10610.swift; sourceTree = "<group>"; };
 		69D0525C2AA19C5800156C81 /* 1789.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1789.swift; sourceTree = "<group>"; };
@@ -44,6 +54,7 @@
 		698725F42A90D7500087ABED = {
 			isa = PBXGroup;
 			children = (
+				69A76B0F2ADE3E1C008332C7 /* 백준 */,
 				698725FF2A90D7500087ABED /* CodingTest */,
 				698725FE2A90D7500087ABED /* Products */,
 			);
@@ -68,6 +79,9 @@
 				69D096562AB029230020609C /* 1946.swift */,
 				690CF2C22AB206D0002B29C0 /* 1049.swift */,
 				690CF2C42AB2B646002B29C0 /* 1439.swift */,
+				69A76B102ADE3E39008332C7 /* golf1.swift */,
+				69A76B112ADE3E39008332C7 /* golf2.swift */,
+				69A76B122ADE3E39008332C7 /* golf3.swift */,
 			);
 			path = CodingTest;
 			sourceTree = "<group>";
@@ -104,7 +118,7 @@
 				TargetAttributes = {
 					698725FC2A90D7500087ABED = {
 						CreatedOnToolsVersion = 14.3.1;
-						LastSwiftMigration = 1430;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -131,6 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69A76B142ADE3E39008332C7 /* golf2.swift in Sources */,
+				69A76B132ADE3E39008332C7 /* golf1.swift in Sources */,
+				69A76B152ADE3E39008332C7 /* golf3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
