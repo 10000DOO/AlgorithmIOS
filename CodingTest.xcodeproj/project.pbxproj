@@ -27,6 +27,7 @@
 /* Begin PBXFileReference section */
 		690CF2C22AB206D0002B29C0 /* 1049.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1049.swift; sourceTree = "<group>"; };
 		690CF2C42AB2B646002B29C0 /* 1439.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1439.swift; sourceTree = "<group>"; };
+		691092A72AE0269D0092AB7D /* 2606.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2606.swift; sourceTree = "<group>"; };
 		698725FD2A90D7500087ABED /* CodingTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		698726002A90D7500087ABED /* 2217.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2217.swift; sourceTree = "<group>"; };
 		69A76B0F2ADE3E1C008332C7 /* 백준 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "백준"; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 				69A76B112ADE3E39008332C7 /* golf2.swift */,
 				69A76B122ADE3E39008332C7 /* golf3.swift */,
 				69A76B162ADE3EB1008332C7 /* 2108.swift */,
+				691092A72AE0269D0092AB7D /* 2606.swift */,
 			);
 			path = CodingTest;
 			sourceTree = "<group>";
