@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		69A76B132ADE3E39008332C7 /* golf1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A76B102ADE3E39008332C7 /* golf1.swift */; };
-		69A76B142ADE3E39008332C7 /* golf2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A76B112ADE3E39008332C7 /* golf2.swift */; };
 		69A76B152ADE3E39008332C7 /* golf3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A76B122ADE3E39008332C7 /* golf3.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +40,7 @@
 		69A76B112ADE3E39008332C7 /* golf2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = golf2.swift; sourceTree = "<group>"; };
 		69A76B122ADE3E39008332C7 /* golf3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = golf3.swift; sourceTree = "<group>"; };
 		69A76B162ADE3EB1008332C7 /* 2108.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2108.swift; sourceTree = "<group>"; };
+		69A7B8092AF1033500F048E7 /* 1251.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1251.swift; sourceTree = "<group>"; };
 		69AB84EF2AA61CD9003534D1 /* 13305.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 13305.swift; sourceTree = "<group>"; };
 		69AB84F12AA6DA1E003534D1 /* 10610.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10610.swift; sourceTree = "<group>"; };
 		69D0525C2AA19C5800156C81 /* 1789.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1789.swift; sourceTree = "<group>"; };
@@ -98,6 +98,7 @@
 				6957454F2AEAC63F0014F298 /* 2644.swift */,
 				6950E7272AEC002000AA15B3 /* 1260.swift */,
 				699EE0B62AEFF40300C32078 /* 17127.swift */,
+				69A7B8092AF1033500F048E7 /* 1251.swift */,
 			);
 			path = CodingTest;
 			sourceTree = "<group>";
@@ -161,7 +162,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69A76B142ADE3E39008332C7 /* golf2.swift in Sources */,
 				69A76B132ADE3E39008332C7 /* golf1.swift in Sources */,
 				69A76B152ADE3E39008332C7 /* golf3.swift in Sources */,
 			);
