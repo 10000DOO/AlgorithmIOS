@@ -41,6 +41,7 @@
 		699AD3EF2B05C27400A6D4BE /* 2422.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2422.swift; sourceTree = "<group>"; };
 		699EC10B2AF9C15800E2F0AE /* 7568.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 7568.swift; sourceTree = "<group>"; };
 		699EE0B62AEFF40300C32078 /* 17127.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17127.swift; sourceTree = "<group>"; };
+		69A767A92B12F8AF0090BB65 /* 1065.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1065.swift; sourceTree = "<group>"; };
 		69A76B0F2ADE3E1C008332C7 /* 백준 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "백준"; sourceTree = "<group>"; };
 		69A76B102ADE3E39008332C7 /* golf1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = golf1.swift; sourceTree = "<group>"; };
 		69A76B112ADE3E39008332C7 /* golf2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = golf2.swift; sourceTree = "<group>"; };
@@ -125,6 +126,7 @@
 				69BE25A32B0E36CB0001BABE /* 9417.swift */,
 				694820442B0EEDDE00E0EF84 /* 17626.swift */,
 				69993B372B1035A300F7BF87 /* 17501.swift */,
+				69A767A92B12F8AF0090BB65 /* 1065.swift */,
 			);
 			path = CodingTest;
 			sourceTree = "<group>";
