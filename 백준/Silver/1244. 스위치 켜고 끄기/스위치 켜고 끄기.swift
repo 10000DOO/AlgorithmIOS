@@ -16,17 +16,17 @@ for i in 0..<member {
         let mark = memberCard[1] - 1
         switchArr[mark] = switchArr[mark] == 0 ? 1 : 0
         
-        var leftIndex = mark - 1
-        var rightIndex = mark + 1
-        while leftIndex >= 0 && rightIndex < N {
-            if switchArr[leftIndex] == switchArr[rightIndex] {
-                switchArr[leftIndex] = switchArr[leftIndex] == 0 ? 1 : 0
-                switchArr[rightIndex] = switchArr[rightIndex] == 0 ? 1 : 0
+        for j in 1..<N / 2 {
+            if mark - j >= 0 && mark + j < N {
+                if switchArr[mark - j] == switchArr[mark + j] {
+                    switchArr[mark - j] = switchArr[mark - j] == 0 ? 1 : 0
+                    switchArr[mark + j] = switchArr[mark + j] == 0 ? 1 : 0
+                } else {
+                    break
+                }
             } else {
                 break
             }
-            leftIndex -= 1
-            rightIndex += 1
         }
     }
 }
