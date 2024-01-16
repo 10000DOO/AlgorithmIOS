@@ -1,39 +1,41 @@
 import Foundation
 
-let NK = readLine()!.split(separator: " ").map { Int(String($0))! }
-let N = NK[0]
-let K = NK[1]
-var count = 0
-let kit = readLine()!.split(separator: " ").map { Int(String($0))! }
-var check = Array(repeating: false, count: N)
+var result = 0
+var day = 0
+var arr: [Int] = []
+var visited: [Bool] = []
 
-func isOk(arr: [Int]) {
-    var health = 500
-    for i in 0..<N {
-        health = health - K + arr[i]
-        if health < 500 {
-            return
-        }
-    }
-    count += 1
+func main() {
+    let nk = readLine()!.split(separator: " ").map { Int($0)! }
+    let n = nk[0]
+    let k = nk[1]
+    
+    arr = readLine()!.split(separator: " ").map { Int($0)! }
+    visited = Array(repeating: false, count: n)
+    
+    muscle(w: 500, k: k, ex: arr)
+    
+    print("\(result)")
 }
 
-func makeArr(array: inout [Int], depth: Int) {
-    if depth == N {
-        isOk(arr: array)
+func muscle(w: Int, k: Int, ex: [Int]) {
+    if w < 500 {
         return
     }
-    for i in 0..<N {
-        if !check[i] {
-            array[depth] = kit[i]
-            check[i] = true
-            makeArr(array: &array, depth: depth + 1)
-            check[i] = false
+    if day == ex.count {
+        result += 1
+        return
+    }
+    for i in 0..<ex.count {
+        if !visited[i] {
+            visited[i] = true
+            let newWeight = w - k + ex[i]
+            day += 1
+            muscle(w: newWeight, k: k, ex: ex)
+            visited[i] = false
+            day -= 1
         }
     }
 }
 
-var input = Array(repeating: 0, count: N)
-makeArr(array: &input, depth: 0)
-
-print(count)
+main()
