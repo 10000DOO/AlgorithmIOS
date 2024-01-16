@@ -20,14 +20,13 @@ func isOk(arr: [Int]) {
 
 func makeArr(array: inout [Int], depth: Int) {
     if depth == N {
-        
         isOk(arr: array)
         return
     }
     for i in 0..<N {
         if !check[i] {
-            check[i] = true
             array[depth] = kit[i]
+            check[i] = true
             makeArr(array: &array, depth: depth + 1)
             check[i] = false
         }
