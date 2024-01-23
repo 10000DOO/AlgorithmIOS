@@ -32,40 +32,22 @@ func getMin(_ a: Int, _ b: Int, _ c: Int, _ d: Int) -> Int {
 }
 
 func main() {
-    if let input = readLine() {
-        let st = StringTokenizer(input)
-        if let a = Int(st.nextToken()), let b = Int(st.nextToken()), let c = Int(st.nextToken()), let d = Int(st.nextToken()) {
-            let minVal = getMin(a, b, c, d)
-            var clockNum = getClockNum()
+    var input = readLine()!.split(separator: " ").map{ Int(String($0))! }
+    let a = input[0]
+    let b = input[1]
+    let c = input[2]
+    let d = input[3]
+    let minVal = getMin(a, b, c, d)
+    var clockNum = getClockNum()
 
-            var answer = 0
-            for i in 1111...minVal {
-                if clockNum[i] {
-                    answer += 1
-                }
-            }
-
-            print(answer)
+    var answer = 0
+    for i in 1111...minVal {
+        if clockNum[i] {
+            answer += 1
         }
     }
+
+    print(answer)
 }
 
-class StringTokenizer {
-    let input: String
-    var tokens: [String]
-    var index: Int
-
-    init(_ input: String) {
-        self.input = input
-        self.tokens = input.split(separator: " ").map { String($0) }
-        self.index = 0
-    }
-
-    func nextToken() -> String {
-        defer { index += 1 }
-        return tokens[index]
-    }
-}
-
-// Call the main function
 main()
