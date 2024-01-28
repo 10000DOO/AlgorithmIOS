@@ -15,10 +15,11 @@ if M > 0 {
 }
 
 func solve() -> Int {
-    outer: for i in 1..<1000 {
+    for i in 1..<1000 {
         var cur = 1
         var isVisited = obstacle
-        
+        var success = true
+
         while cur < 1000 {
             if cur == Z {
                 return i
@@ -26,6 +27,7 @@ func solve() -> Int {
             if !isVisited[cur] {
                 isVisited[cur] = true
             } else {
+                success = false
                 break
             }
             cur += i
@@ -33,6 +35,8 @@ func solve() -> Int {
                 cur -= N
             }
         }
+
+        if success { continue }
     }
     return -1
 }
