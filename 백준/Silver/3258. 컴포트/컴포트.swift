@@ -1,26 +1,40 @@
 import Foundation
 
-let input = readLine()!.split(separator: " ").map { Int($0)! }
-let N = input[0]
-var Z = input[1]
-let M = Set(readLine()!.split(separator: " ").map { Int($0)! })
+let NZM = readLine()!.split(separator: " ").map { Int(String($0))! }
+let N = NZM[0]
+let Z = NZM[1]
+let M = NZM[2]
+var obstacle = Array(repeating: false, count: N+1)
 
-if Z == N {
-    Z = 0
-}
-
-for K in 1..<N {
-    let arr = (0..<N).map { (1 + K * $0) % N }
+if M > 0 {
+    let MValues = readLine()!.split(separator: " ").map { Int(String($0))! }
     
-    for val in arr {
-        if M.contains(val) {
-            break
-        }
-        if val == Z {
-            print(K)
-            exit(0)
-        }
+    for i in 0..<M {
+        obstacle[MValues[i]] = true
     }
 }
 
-print(1)  // M이 비어있는 경우
+func solve() -> Int {
+    outer: for i in 1..<1000 {
+        var cur = 1
+        var isVisited = obstacle
+        
+        while cur < 1000 {
+            if cur == Z {
+                return i
+            }
+            if !isVisited[cur] {
+                isVisited[cur] = true
+            } else {
+                break
+            }
+            cur += i
+            if cur > N {
+                cur -= N
+            }
+        }
+    }
+    return -1
+}
+
+print(solve())
