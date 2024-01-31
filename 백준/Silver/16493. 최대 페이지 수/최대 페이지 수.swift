@@ -1,27 +1,27 @@
 import Foundation
 
-let NM = readLine()!.split{$0==" "}.map{ Int(String($0))! }
-let N = NM[0]
-let M = NM[1]
-var chapterDays = [[Int]]()
-var maxPages = 0
-for _ in 0..<M {
-    chapterDays.append(readLine()!.split{$0==" "}.map{ Int(String($0))! })
-}
+var dp = Array(repeating: Array(repeating: 0, count: 201), count: 21)
+var arr = Array(repeating: Array(repeating: 0, count: 2), count: 21)
 
-allCases(days: 0, pages: 0, depth: 0)
+if let input = readLine()?.split(separator: " ").compactMap({ Int($0) }), input.count == 2 {
+    let n = input[0]
+    let m = input[1]
 
-print(maxPages)
-
-func allCases(days: Int, pages: Int, depth: Int) {
-    if days <= N {
-        maxPages = max(maxPages, pages)
+    for i in 1...m {
+        if let line = readLine()?.split(separator: " ").compactMap({ Int($0) }), line.count == 2 {
+            arr[i][0] = line[0]
+            arr[i][1] = line[1]
+        }
     }
-    
-    if depth == M {
-        return
+
+    for i in 1...m {
+        for j in 0...n {
+            if j - arr[i][0] >= 0 {
+                dp[i][j] = max(dp[i - 1][j - arr[i][0]] + arr[i][1], dp[i - 1][j])
+            }
+            dp[i][j] = max(dp[i - 1][j], dp[i][j])
+        }
     }
-    
-    allCases(days: days + chapterDays[depth][0], pages: pages + chapterDays[depth][1], depth: depth + 1)
-    allCases(days: days, pages: pages, depth: depth + 1)
+
+    print(dp[m][n])
 }
